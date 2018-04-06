@@ -82,4 +82,8 @@ The 3 ways handshake is providing a mean to exchange the initial sequence number
 
 This protocol is not connection oriented.
 
-It is not ensuring that the data is not lost. It is not performing transmission error control. It is not establishing a connection prior
+It is not ensuring that the data is not lost. It is not performing transmission error control. It is not establishing a connection prior to data transmission. There is no warranty of datagram delivery, nor order delivery control.
+
+Content integrity is verified through the use of a checksum. It is optional with Ipv4 and mandatory on Ipv6.
+
+The protocol is well suited for low latency use cases where a datagram loss is not critical such as Voice on IP and online gaming.
