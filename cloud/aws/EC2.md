@@ -197,6 +197,28 @@ Either
 
 Do not confuse Cloud trail (auditing )with Cloud watch (monitoring)
 
-### EC2 - The AWS CLI
+### 41 EC2 - The AWS CLI
 
+To use aws CLI, one should set up a user and configure the CLI to use the user credentials (access key id and secret access key).
+
+#### 42 EC2 - IAM Roles with EC2
+
+* AWS Service Role
+* AWS Service linked roles
+* AWS Roles for cross-account access
+* Role for identity provider access
+
+
+
+* Roles are created globally
+* It is now possible to attach/replace a role to a running EC2 instance
+
+#### 43 EC2 - S3 Cli region
+
+--region flag 
+
+Usage example :
+aws s3 cp --recursive s3://acloudguru-ema-2018 /home/ec2-user --region 
+
+#### 44 EC2 - Bash scripting
 
